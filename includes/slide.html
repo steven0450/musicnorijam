@@ -1,5 +1,6 @@
 <!-- 메인 상단 이미지 슬라이더 모듈 -->
-<section id="mainSlider" class="carousel slide carousel-fade pt-5 mt-3" data-bs-ride="carousel" data-bs-interval="4000">
+<section id="mainSlider" class="carousel slide carousel-fade pt-5 mt-3 position-relative" data-bs-ride="carousel"
+    data-bs-interval="4000">
     <!-- 하단 슬라이드 위치 표시 점 (Indicators) -->
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true"
@@ -13,8 +14,7 @@
         <!-- 슬라이드 1 -->
         <div class="carousel-item active">
             <div class="position-relative overflow-hidden">
-                <img src="https://via.placeholder.com/1200x480/8a2be2/FFFFFF?text=Music+Jam+Nori+Jam+1"
-                    class="d-block w-100" alt="메인 슬라이드 1">
+                <img src="assets/images/slide/slide1.png" class="d-block w-100" alt="메인 슬라이드 1">
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100 pb-0">
                     <span class="badge bg-purple-soft text-purple mb-2 px-3 py-2 rounded-pill font-round">Early
@@ -31,8 +31,7 @@
         <!-- 슬라이드 2 -->
         <div class="carousel-item">
             <div class="position-relative overflow-hidden">
-                <img src="https://via.placeholder.com/1200x480/ba55d3/FFFFFF?text=Music+Jam+Nori+Jam+2"
-                    class="d-block w-100" alt="메인 슬라이드 2">
+                <img src="assets/images/slide/slide2.png" class="d-block w-100" alt="메인 슬라이드 2">
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100 pb-0">
                     <span class="badge bg-purple-soft text-purple mb-2 px-3 py-2 rounded-pill font-round">Special
@@ -50,8 +49,7 @@
         <!-- 슬라이드 3 -->
         <div class="carousel-item">
             <div class="position-relative overflow-hidden">
-                <img src="https://via.placeholder.com/1200x480/9370db/FFFFFF?text=Music+Jam+Nori+Jam+3"
-                    class="d-block w-100" alt="메인 슬라이드 3">
+                <img src="assets/images/slide/slide3.png" class="d-block w-100" alt="메인 슬라이드 3">
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100 pb-0">
                     <span class="badge bg-purple-soft text-purple mb-2 px-3 py-2 rounded-pill font-round">Professional
@@ -75,4 +73,11 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">다음</span>
     </button>
+
+    <!-- AI 생성 이미지 표기 배지 (우측 하단) -->
+    <div class="position-absolute bottom-0 end-0 p-3 me-2 mb-2" style="z-index: 5;">
+        <span class="badge bg-dark bg-opacity-50 text-white-50 font-round fw-normal" style="font-size: 0.72rem;">
+            ※ AI 생성 이미지 활용
+        </span>
+    </div>
 </section>
