@@ -1,8 +1,203 @@
-<html>
-  <head>
-    <title>뮤직잼노리잼</title>
-  </head>
-  <body>
-    <h1>준비 중 입니다!!!</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뮤직잼노리잼 | 영유아 전문 음악 교육 & 퍼포먼스</title>
+    <!-- include-head 모듈 호출용 -->
+    <meta id="include-head">
+    <style>
+        .carousel-item img {
+            height: 480px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 767.98px) {
+            .carousel-item img {
+                height: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 상단 헤더 모듈 -->
+    <div id="include-header"></div>
+
+    <main>
+        <!-- 1. 메인 슬라이더 모듈 호출 영역 -->
+        <div id="include-slide"></div>
+
+        <!-- 2. 브랜드 소개 & 특별함 Section -->
+        <section id="about" class="py-5 bg-white">
+            <div class="container py-4">
+                <div class="text-center mb-4">
+                    <span class="badge bg-purple-soft text-purple mb-2 px-3 py-2 rounded-pill font-round">Special
+                        Point</span>
+                    <h2 class="font-round fw-bold text-dark display-6">뮤직잼노리잼의 특별함</h2>
+                </div>
+
+                <!-- 6가지 특징 목록 -->
+                <div class="row g-2 justify-content-center mx-auto mb-4" style="max-width: 720px;">
+                    <div class="col-12">
+                        <div class="p-3 bg-soft text-dark font-round fw-bold rounded-3 shadow-sm"><i
+                                class="bi bi-music-note-beamed text-purple me-2"></i>오감을 자극하는 신나는 다중지능 퍼포먼스</div>
+                    </div>
+                    <div class="col-12">
+                        <div class="p-3 bg-soft text-dark font-round fw-bold rounded-3 shadow-sm"><i
+                                class="bi bi-music-note-beamed text-purple me-2"></i>다양한 악기 탐색과 음악 활동으로 창의적 표현력 향상</div>
+                    </div>
+                    <div class="col-12">
+                        <div class="p-3 bg-soft text-dark font-round fw-bold rounded-3 shadow-sm"><i
+                                class="bi bi-music-note-beamed text-purple me-2"></i>다양한 주제와 교구로 이루어지는 신나는 퍼포먼스</div>
+                    </div>
+                    <div class="col-12">
+                        <div class="p-3 bg-soft text-dark font-round fw-bold rounded-3 shadow-sm"><i
+                                class="bi bi-music-note-beamed text-purple me-2"></i>EQ쑥쑥!! IQ쑥쑥!! 창의성이 자라는 신체 놀이</div>
+                    </div>
+                    <div class="col-12">
+                        <div class="p-3 bg-soft text-dark font-round fw-bold rounded-3 shadow-sm"><i
+                                class="bi bi-music-note-beamed text-purple me-2"></i>놀이 속 교구를 통한 호기심 충족, 정서적, 사회적 발달
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="p-3 bg-soft text-dark font-round fw-bold rounded-3 shadow-sm"><i
+                                class="bi bi-music-note-beamed text-purple me-2"></i>매주 새로운 놀이를 통한 다양한 경험으로 창의력과 자존감 향상
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 핵심 교육 철학 문구 -->
+                <div class="text-center p-4 rounded-4 bg-light mx-auto border" style="max-width: 720px;">
+                    <p class="font-round fw-bold text-dark mb-0 fs-5">
+                        "영유아 시기는 지식을 담는 시기가 아닌 <span class="text-purple">그릇을 만드는 시기</span>입니다."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 핵심 이동 배너 카드 -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-4 text-center font-round">
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="fs-1 text-purple mb-2"><i class="bi bi-journal-check"></i></div>
+                                <h5 class="fw-bold text-dark">대표 프로그램</h5>
+                                <p class="text-muted small">영아 맞춤형 음악놀이터와 테마별 세부 커리큘럼</p>
+                            </div>
+                            <a href="program.html" class="btn btn-sm btn-outline-purple rounded-pill mt-3">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="fs-1 text-purple mb-2"><i class="bi bi-people"></i></div>
+                                <h5 class="fw-bold text-dark">전문 강사진</h5>
+                                <p class="text-muted small">아이들을 사랑으로 지도하는 유아 음악 전문가</p>
+                            </div>
+                            <a href="team.html" class="btn btn-sm btn-outline-purple rounded-pill mt-3">강사진 보기</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="fs-1 text-purple mb-2"><i class="bi bi-music-player"></i></div>
+                                <h5 class="fw-bold text-dark">교구 & 악기</h5>
+                                <p class="text-muted small">오감 발달을 돕는 알록달록 안전한 음악 교구</p>
+                            </div>
+                            <a href="instruments.html" class="btn btn-sm btn-outline-purple rounded-pill mt-3">교구
+                                둘러보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 출강 및 기타 문의 Section -->
+        <section id="contact" class="py-5 bg-white">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="badge bg-purple-soft text-purple mb-2 px-3 py-2 rounded-pill font-round">Contact
+                        Us</span>
+                    <h2 class="font-round fw-bold text-dark display-6">출강 및 정시 수업 문의</h2>
+                    <p class="text-muted small">어린이집, 유치원, 문화센터 출강 상담 및 교육 문의를 남겨주세요.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+                            class="bg-light p-4 rounded-4 shadow-sm font-round">
+                            <div class="mb-3">
+                                <label for="contact-name" class="form-label fw-bold">성함 / 기관명</label>
+                                <input type="text" name="name" id="contact-name" class="form-control"
+                                    placeholder="예: OO어린이집 / 홍길동 원장" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-phone" class="form-label fw-bold">연락처</label>
+                                <input type="tel" name="phone" id="contact-phone" class="form-control"
+                                    placeholder="010-0000-0000" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-email" class="form-label fw-bold">이메일 주소</label>
+                                <input type="email" name="email" id="contact-email" class="form-control"
+                                    placeholder="contact@musicnorijam.co.kr">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-message" class="form-label fw-bold">문의 내용</label>
+                                <textarea name="message" id="contact-message" class="form-control" rows="4"
+                                    placeholder="희망 출강 지역, 대상 연령대, 예상 인원 등을 자유롭게 적어주세요." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-purple w-100 font-round py-2 rounded-3 shadow-sm" onclick="alert('준비 중입니다. 아래의 전화번호를 통해 문의해주세요.');">
+                                <i class="bi bi-send-fill me-1"></i> 상담 문의 등록하기
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 하단 푸터 모듈 -->
+    <div id="include-footer"></div>
+
+    <!-- 모듈 로드 스크립트 -->
+    <script>
+        async function loadHTML(elementId, filePath) {
+            try {
+                const response = await fetch(filePath);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.text();
+                document.getElementById(elementId).innerHTML = data;
+
+                // slide.html을 불러온 직후 부트스트랩 캐러셀 강제 동작 실행
+                if (elementId === 'include-slide') {
+                    const sliderEl = document.getElementById('mainSlider');
+                    if (sliderEl && typeof bootstrap !== 'undefined') {
+                        new bootstrap.Carousel(sliderEl, {
+                            interval: 4000,
+                            ride: 'carousel'
+                        });
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading HTML:', error);
+            }
+        }
+
+        // 모듈 불러오기 실행
+        loadHTML('include-header', 'includes/header.html');
+        loadHTML('include-slide', 'includes/slide.html');
+        loadHTML('include-footer', 'includes/footer.html');
+        loadHTML('include-head', 'includes/head.html');
+    </script>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

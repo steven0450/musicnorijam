@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   1. 디자인 시스템 변수 (Color Palette & Theme Variables)
+   ========================================================================== */
+:root {
+    /* 브랜드 대표 컬러: 미디움 퍼플 계열 */
+    --brand-purple: #9370DB;
+    /* Medium Purple (메인) */
+    --brand-purple-dark: #7B52C4;
+    /* 버튼 호버 / 강조용 */
+    --brand-purple-light: #F4EFFC;
+    /* 카드리스트 / 연한 태그 배경 */
+    --brand-purple-soft: #E2D5F8;
+    /* 보더 / 연한 포인트 */
+
+    /* 서브 포인트 컬러 (필요시 살짝 얹어주는 서브 톤) */
+    --sub-cream: #FFFBF5;
+    /* 은은한 크림톤 배경 */
+    --sub-yellow: #FFC107;
+    /* 별점 / 아이콘 포인트 */
+
+    /* Neutral (무채색) */
+    --bg-white: #FFFFFF;
+    --bg-gray: #F8F9FA;
+    /* 영역 구분용 연한 회색 배경 */
+    --text-main: #2B2B2B;
+    /* 본문 주요 텍스트 */
+    --text-muted: #6C757D;
+    /* 설명글 / 부제목 */
+    --border-light: #E9ECEF;
+    /* 구분선 */
+
+    /* Font Family */
+    --font-round: 'NanumSquareRound', sans-serif;
+    --font-body: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+/* ==========================================================================
+   2. 기본 리셋 및 공통 스타일 (Global Styles)
+   ========================================================================== */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    background-color: var(--bg-white);
+    line-height: 1.6;
+    word-break: keep-all;
+    /* 한글 단어 단위 줄바꿈 */
+    letter-spacing: -0.02em;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-round {
+    font-family: var(--font-round);
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================================================
+   3. 네비게이션 바 (Navbar)
+   ========================================================================== */
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .navbar-brand {
+    font-family: var(--font-round);
+    font-weight: 800;
+    color: var(--brand-purple) !important;
+    font-size: 1.35rem;
+}
+
+.custom-navbar .nav-link {
+    color: var(--text-main);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: var(--brand-purple);
+}
+
+.custom-navbar .dropdown-menu .dropdown-item:hover,
+.custom-navbar .dropdown-menu .dropdown-item:focus,
+.custom-navbar .dropdown-menu .dropdown-item:active,
+.custom-navbar .dropdown-menu .dropdown-item.active {
+    color: #FFFFFF;
+    background-color: var(--brand-purple);
+}
+
+/* ==========================================================================
+   4. Hero Section (메인 상단 배너)
+   ========================================================================== */
+.hero-section {
+    background: linear-gradient(180deg, var(--brand-purple-light) 0%, var(--bg-white) 100%);
+    padding: 100px 0 70px 0;
+    position: relative;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: var(--bg-white);
+    color: var(--brand-purple);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 6px 16px;
+    border-radius: 50px;
+    border: 1px solid var(--brand-purple-soft);
+    box-shadow: 0 4px 12px rgba(147, 112, 219, 0.08);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+
+.hero-title .highlight {
+    color: var(--brand-purple);
+    position: relative;
+    display: inline-block;
+}
+
+/* ==========================================================================
+   5. 카드 컴포넌트 (Custom Cards)
+   ========================================================================== */
+.custom-card {
+    border: 1px solid var(--border-light);
+    border-radius: 20px;
+    background-color: var(--bg-white);
+    padding: 30px 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--brand-purple-soft);
+    box-shadow: 0 12px 32px rgba(147, 112, 219, 0.12);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: var(--brand-purple-light);
+    color: var(--brand-purple);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   6. 버튼 스타일 (Buttons)
+   ========================================================================== */
+.btn-purple {
+    background-color: var(--brand-purple);
+    color: #FFFFFF !important;
+    border-radius: 50px;
+    padding: 12px 28px;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 4px 14px rgba(147, 112, 219, 0.35);
+    transition: all 0.25s ease;
+}
+
+.btn-purple:hover {
+    background-color: var(--brand-purple-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(147, 112, 219, 0.45);
+}
+
+.btn-outline-purple {
+    background-color: transparent;
+    color: var(--brand-purple) !important;
+    border: 2px solid var(--brand-purple);
+    border-radius: 50px;
+    padding: 10px 26px;
+    font-weight: 700;
+    transition: all 0.25s ease;
+}
+
+.btn-outline-purple:hover {
+    background-color: var(--brand-purple-light);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   7. Section 레이아웃 & 푸터 (Footer)
+   ========================================================================== */
+.section-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-title p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.bg-soft {
+    background-color: var(--bg-gray);
+}
+
+footer {
+    background-color: var(--bg-white);
+    border-top: 1px solid var(--border-light);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   8. 반응형 처리 (Mobile Responsiveness)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.85rem;
+    }
+
+    .hero-section {
+        padding: 80px 0 50px 0;
+    }
+
+    .custom-card {
+        padding: 24px 18px;
+    }
+}
+
+/* SNS 아이콘 버튼 스타일 */
+.sns-icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--brand-purple-light);
+    color: var(--brand-purple);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.sns-icon-btn:hover {
+    transform: translateY(-3px);
+    color: #ffffff;
+    background-color: var(--brand-purple);
+    box-shadow: 0 4px 10px rgba(147, 112, 219, 0.3);
+}
+
+/* 개별 포인트 컬러 (선택사항) */
+.sns-icon-btn.instagram:hover {
+    background-color: #E1306C;
+}
+
+/* 인스타 핑크 */
+.sns-icon-btn.youtube:hover {
+    background-color: #FF0000;
+}
+
+/* 유튜브 빨강 */
+.sns-icon-btn.blog:hover {
+    background-color: #03C75A;
+}
+
+/* 네이버 초록 */
+.sns-icon-btn.kakao:hover {
+    background-color: #FEE500;
+    color: #000000;
+}
+
+/* 카톡 노랑 */
+
+/* Auth Modal 스타일 커스텀 */
+#authTab .nav-link {
+    color: var(--text-muted);
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+#authTab .nav-link.active {
+    color: var(--brand-purple);
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--brand-purple-soft);
+    box-shadow: 0 0 0 0.25rem rgba(147, 112, 219, 0.25);
+}

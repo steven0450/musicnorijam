@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교구 & 악기 소개 | 뮤직잼노리잼</title>
+    <!-- include-head 모듈 호출용 -->
+    <meta id="include-head">
+    <style>
+        /* 단색 통일 원형 악기 프레임 (브랜드 연보라 톤) */
+        .circle-instrument-wrapper {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: #f0e6ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .circle-instrument-wrapper:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 10px 20px rgba(147, 112, 219, 0.2);
+        }
+
+        .circle-instrument-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 상단 헤더 모듈 -->
+    <div id="include-header"></div>
+
+    <main>
+        <!-- 메인 콘텐츠 영역 (상단 헤더 잘림 방지 pt-5 mt-5 적용) -->
+        <section class="py-5 pt-5 mt-5" style="padding-top: 40px;">
+            <div class="container">
+
+                <!-- 1. 다른 페이지(team.html 등)와 동일한 타이틀 헤딩 구조 -->
+                <div class="text-center mb-5">
+                    <span class="badge bg-purple-soft text-purple mb-2 px-3 py-2 rounded-pill font-round">Instruments &
+                        Props</span>
+                    <h2 class="font-round fw-bold text-dark display-6">교구 & 악기 소개</h2>
+                    <p class="text-muted small">아이들의 오감을 자극하는 안전하고 다채로운 음악 교구와 악기들입니다.</p>
+                </div>
+
+                <!-- 2. 단색 통일 원형 악기 그리드 (12개) -->
+                <div class="row g-4 justify-content-center text-center">
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/halilit.png" alt="Halilit 코끼리코">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">Halilit 코끼리코</h5>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/handbell.png" alt="라운드벨">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">라운드벨</h5>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/multi.png" alt="6in1 멀티악기">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">6in1 멀티악기</h5>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/maracas.png" alt="마라카스">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">마라카스</h5>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/chica_chica.png" alt="Pylones Chica Chica 마라카스">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">Pylones Chica Chica 마라카스</h5>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/lollipop_drum.png" alt="롤리팝 드럼">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">롤리팝 드럼</h5>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/darbuka.png" alt="다르부카">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">다르부카</h5>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/triangle.png" alt="트라이앵글">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">트라이앵글</h5>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/cymbals.png" alt="핑거 심벌즈">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">핑거 심벌즈</h5>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/wood_xylophone.png" alt="원목 실로폰">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">원목 실로폰</h5>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/woodblock.png" alt="우드블록">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">우드블록</h5>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div class="circle-instrument-wrapper shadow-sm">
+                            <img src="assets/images/instruments/kids_percussion.png" alt="Remo Kids Percussion">
+                        </div>
+                        <h5 class="font-round fw-bold mt-3 text-dark mb-0">Remo Kids Percussion</h5>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- 하단 푸터 모듈 -->
+    <div id="include-footer"></div>
+
+    <!-- 모듈 로드 스크립트 -->
+    <script>
+        async function loadHTML(elementId, filePath) {
+            try {
+                const response = await fetch(filePath);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.text();
+                document.getElementById(elementId).innerHTML = data;
+            } catch (error) {
+                console.error('Error loading HTML:', error);
+            }
+        }
+
+        loadHTML('include-header', 'includes/header.html');
+        loadHTML('include-footer', 'includes/footer.html');
+        loadHTML('include-head', 'includes/head.html');
+    </script>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
